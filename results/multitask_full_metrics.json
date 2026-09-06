@@ -1,0 +1,35 @@
+{
+  "benchmark": "real_multitask",
+  "seed": 42,
+  "device": "mps",
+  "parameter_count": 7217691,
+  "best_epoch": 23,
+  "best_mean_validation_macro_f1": 0.9598455821892099,
+  "training_seconds": 305.6414194999961,
+  "samples": {
+    "train": 120000,
+    "validation": 15000,
+    "test": 15000
+  },
+  "test": {
+    "loss": 0.9027271891276042,
+    "host": {
+      "accuracy": 0.9908,
+      "balanced_accuracy": 0.9384683646667341,
+      "macro_f1": 0.9438223313733347,
+      "weighted_f1": 0.9907471116356946
+    },
+    "subtype": {
+      "accuracy": 0.9978666666666667,
+      "balanced_accuracy": 0.9675641911347304,
+      "macro_f1": 0.9715912667908551,
+      "weighted_f1": 0.9978424472019849
+    },
+    "clade": {
+      "accuracy": 0.9668,
+      "balanced_accuracy": 0.9625405655124557,
+      "macro_f1": 0.9624288928735076,
+      "weighted_f1": 0.9668133378188424
+    }
+  }
+}
