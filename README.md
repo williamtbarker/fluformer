@@ -488,11 +488,11 @@ Large datasets, protein embeddings, generated checkpoints, predictions, and loca
 
 ## Reproducing the embeddings
 
-The reference benchmark used precomputed 640-dimensional protein-language-model mean representations.
+The reference benchmark used precomputed 640-dimensional protein-language-model mean representations derived from influenza protein sequences.
 
-A 150M-parameter ESM protein language model was used to precompute 640-dimensional protein representations from raw amino-acid sequences.
+Dataset acquisition and source-specific preprocessing are intentionally outside the scope of this repository. Users are responsible for obtaining appropriate sequence data through authorized sources and complying with applicable data-access and usage terms.
 
-Individual influenza isolates were scraped in roughly 15,000-20,000 isolate shards from existing GISAID records. Sequences were aggressively deduplicated and protein sequences were padded at their C-terminus when truncations were encountered.
+The benchmark runner accepts precomputed representations through the documented data contract, allowing equivalent experiments to be performed with independently prepared datasets.
 
 ---
 
