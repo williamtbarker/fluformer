@@ -27,12 +27,12 @@ dist/
 .idea/
 
 # Local data and model artifacts
-data/
-datasets/
-checkpoints/
-models/
-runs/
-outputs/
+/data/
+/datasets/
+/checkpoints/
+/models/
+/runs/
+/outputs/
 *.pt
 *.pth
 *.ckpt
@@ -40,6 +40,3 @@ outputs/
 # Local environment files
 .env
 .env.*
-
-# Local benchmark outputs
-outputs/
