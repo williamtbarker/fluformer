@@ -1,5 +1,9 @@
 # Fluformer
 
+[![CI](https://github.com/williamtbarker/fluformer/actions/workflows/ci.yml/badge.svg)](https://github.com/williamtbarker/fluformer/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/williamtbarker/fluformer)](https://github.com/williamtbarker/fluformer/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/williamtbarker/fluformer?display_name=tag&sort=semver)](https://github.com/williamtbarker/fluformer/releases)
+
 **Multitask learning and temporally conditioned protein modeling for influenza proteome representations.**
 
 Fluformer is a PyTorch research package for experiments combining protein-language-model embeddings, multitask classification, temporal conditioning, and conditional sequence modeling for viral protein systems. This model in particular is designed around the known influenza proteome of 10 major protein products derived from eight gene segments. 
