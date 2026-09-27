@@ -1,8 +1,10 @@
+from importlib.metadata import version
+
 import fluformer
 
 
 def test_public_api_exports_expected_symbols():
-    assert fluformer.__version__ == "0.1.0"
+    assert fluformer.__version__ == version("fluformer")
 
     assert set(fluformer.__all__) == {
         "CVAEConfig",
