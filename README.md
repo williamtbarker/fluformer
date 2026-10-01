@@ -120,7 +120,7 @@ model = ConditionalProteinVAE(config)
 
 # Real-data benchmark
 
-A reference benchmark was run against precomputed influenza proteome representations containing **150,000 non-overlapping isolate records**:
+A reference benchmark was run against precomputed influenza proteome representations containing **150,000 isolate records with no isolate-ID overlap across train, validation, and test splits**:
 
 | Split | Isolates |
 |---|---:|
@@ -320,7 +320,7 @@ Example Apple Silicon output:
 
 ```json
 {
-  "fluformer": "0.1.0",
+  "fluformer": "0.1.1",
   "torch": "2.14.0",
   "default_device": "mps",
   "cuda_available": false,
@@ -408,7 +408,7 @@ Keeping sequence acquisition, accession handling, embedding storage, preprocessi
 
 ## Software validation
 
-The v0.1.0 test suite contains **79 tests** covering:
+The current test suite contains **79 tests** covering:
 
 - configuration validation and boundary conditions;
 - tensor-shape validation;
@@ -441,7 +441,7 @@ python -m pytest \
   --cov-report=term-missing
 ```
 
-Current v0.1.0 software-validation baseline:
+Current software-validation baseline:
 
 ```text
 79 passed
@@ -498,7 +498,7 @@ The benchmark runner accepts precomputed representations through the documented 
 
 ## Project status
 
-Fluformer v0.1.0 establishes a tested public API for multitask protein-representation learning and conditional sequence-modeling experiments.
+Fluformer v0.1.1 establishes a tested public API for multitask protein-representation learning and conditional sequence-modeling experiments.
 
 Near-term development priorities include:
 
